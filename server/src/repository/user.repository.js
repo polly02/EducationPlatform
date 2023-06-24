@@ -29,7 +29,7 @@ async function createUserDB(name, surname, email, pwd, role) {
     }
 }
 
-async function updateUserDB(id, name, surname, email, pwd, role){
+async function updateUserDB(id, name, surname, email, pwd, role) {
     const client = await pool.connect()
     try {
         await client.query("BEGIN")
@@ -44,7 +44,7 @@ async function updateUserDB(id, name, surname, email, pwd, role){
     }
 }
 
-async function deleteUserDB(id){
+async function deleteUserDB(id) {
     const client = await pool.connect()
     try {
         await client.query("BEGIN")
@@ -53,7 +53,7 @@ async function deleteUserDB(id){
         await client.query("COMMIT")
         return result
     } catch (error) {
-        await  client.query("ROLLBACK")
+        await client.query("ROLLBACK")
         console.log(`deleteUserDB: ${error.message}`)
         return []
     }

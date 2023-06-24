@@ -1,6 +1,5 @@
 const { getUserDB, getUserByIdDB, createUserDB, updateUserDB, deleteUserDB } = require('../repository/user.repository')
 
-
 async function getUser() {
     return await getUserDB()
 }
@@ -17,7 +16,7 @@ async function updateUser(id, name, surname, email, pwd, role) {
     return await updateUserDB(id, name, surname, email, pwd, role)
 }
 
-async function deleteUser(id){
+async function deleteUser(id) {
     return await deleteUserDB(id)
 }
 
