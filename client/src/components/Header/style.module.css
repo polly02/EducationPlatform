@@ -1,34 +1,43 @@
 .wrapper {
-    background: var(--primaty-grey-light, #f6f5f4);
-    box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
-    padding: 24px 0;
+  background: var(--primaty-grey-light, #f6f5f4);
+  -webkit-box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+          box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+  padding: 24px 0;
 }
-
-.content {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+.wrapper .content {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
-
-nav {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-    align-items: center;
+.wrapper .content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.login {
-    color: #000000;
-    font: 700 16px 'Montserrat';
+.wrapper .content nav .login {
+  color: #000000;
+  font: 700 16px "Montserrat";
 }
-
-.sign {
-    border-radius: 14px;
-    background: #2B788B;
-    width: 100px;
-    padding: 13px 0;
-    text-align: center;
-    color: #ffff;
+.wrapper .content nav .sign {
+  border-radius: 14px;
+  background: #2B788B;
+  width: 100px;
+  padding: 13px 0;
+  text-align: center;
+  color: white;
 }

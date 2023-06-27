@@ -1,79 +1,78 @@
 .preview {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 50px auto 0;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 50px auto 0;
 }
-
-.preview .content{
-    width: 520px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.preview .content {
+  width: 520px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-.preview .textPlatform {
-    font: 700 16px 'Montserrat';
-    color: #2B788B;
+.preview .content .textPlatform {
+  font: 700 16px "Montserrat";
+  color: #2B788B;
 }
-
-.preview h1 {
-    color: #000000;
-    font: 400 56px 'Dela Gothic One';
+.preview .content h1 {
+  color: #000000;
+  font: 400 56px "Dela Gothic One";
 }
-
-.preview .textAdditional {
-    font: 600 18px 'Montserrat';
-    color: #757575;
+.preview .content .textAdditional {
+  font: 600 18px "Montserrat";
+  color: #757575;
 }
-
-.preview .btn {
-    border-radius: 100px;
-    background: var(--primaty-cyan-light, #C3DCE3);
-    color: #2B788B;
-    background-color: #C3DCE3;
-    padding: 14px 22px;
-    width: 165px;
-    text-align: center;
+.preview .content .btn {
+  border-radius: 100px;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  color: #2B788B;
+  background-color: #C3DCE3;
+  padding: 14px 22px;
+  width: 165px;
+  text-align: center;
 }
-
-.preview .statistic .lightning {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url(./assets/lightning.svg);
-    width: 24px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: contain;
+.preview .content .statistic {
+  width: 175px;
 }
-
-.preview .statistic .studentsCount .plus {
-    color: #2B788B;
-
+.preview .content .statistic .studentsCount {
+  font: 400 40px "Dela Gothic One";
 }
-
-.preview .statistic .studentsCount {
-    font: 400 40px 'Dela Gothic One';
+.preview .content .statistic .studentsCount .lightning {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(./assets/lightning.svg);
+  width: 24px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
-.preview .statistic .studentsText {
-    font: 600 15px 'Dela Gothic One';
-    color: #585858;
-    text-align: center;
+.preview .content .statistic .studentsCount .plus {
+  color: #2B788B;
 }
-
-.preview .statistic {
-    width: 175px;
+.preview .content .statistic .studentsText {
+  font: 600 15px "Dela Gothic One";
+  color: #585858;
+  text-align: center;
 }
-
 .preview .img {
-    background-image: url(./assets/Frame\ 24.png);
-    width: 933px;
-    height: 601px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 50%;
+  background-image: url(./assets/Frame\ 24.png);
+  width: 933px;
+  height: 601px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
 }
