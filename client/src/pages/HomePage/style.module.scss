@@ -1,3 +1,9 @@
+$heading-color: #000000;
+$text-color: #757575;
+$background-button: #C3DCE3;
+$text-button: #2B788B;
+$additional-text: #585858;
+
 .preview {
     width: 1200px;
     display: flex;
@@ -14,27 +20,27 @@
 
         .textPlatform {
             font: 700 16px 'Montserrat';
-            color: #2B788B;
+            color: $text-button;
         }
 
         h1 {
-            color: #000000;
+            color: $heading-color;
             font: 400 56px 'Dela Gothic One';
         }
 
         .textAdditional {
             font: 600 18px 'Montserrat';
-            color: #757575;
+            color: $text-color;
         }
 
         .btn {
             border-radius: 100px;
-            background: var(--primaty-cyan-light, #C3DCE3);
-            color: #2B788B;
-            background-color: #C3DCE3;
+            color: $text-button;
+            background-color: $background-button;
             padding: 14px 22px;
             width: 165px;
             text-align: center;
+            cursor: pointer;
         }
 
         .statistic {
@@ -54,13 +60,13 @@
                 }
 
                 .plus {
-                    color: #2B788B;
+                    color: $text-button;
                 }
             }
 
             .studentsText {
                 font: 600 15px 'Dela Gothic One';
-                color: #585858;
+                color: $additional-text;
                 text-align: center;
             }
         }
@@ -77,3 +83,132 @@
     }
 }
 
+.playing {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 120px auto 0;
+
+    .img {
+        background-image: url(./assets/image\ 8.png);
+        width: 580px;
+        height: 445px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .content {
+        width: 520px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            color: $heading-color;
+            font: 400 48px 'Dela Gothic One';
+        }
+
+        p {
+            font: 600 18px 'Montserrat';
+            color: $text-color;
+        }
+
+        .modals {
+            display: flex;
+
+            .sprint {
+                width: 85px;
+                height: 84px;
+                color: #945069;
+                background-color: #F2D4DC;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                padding: 14px 22px;
+                align-items: flex-end;
+                margin-right: 25px;
+
+                .shoes {
+                    background-image: url(./assets/shoes.svg);
+                    width: 131px;
+                    height: 106px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 70px;
+                }
+            }
+
+            .task {
+                color: #2B788B;
+                background-color: #C3DCE3;
+                display: flex;
+                width: 128px;
+                height: 84px;
+                padding: 14px 22px;
+                justify-content: center;
+                align-items: flex-end;
+                border-radius: 14px;
+
+                .megaphone {
+                    background-image: url(./assets/megaphone.svg);
+                    width: 91px;
+                    height: 106px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 70px;
+                }
+            }
+        }
+    }
+}
+
+.textbook {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 120px auto 0;
+
+    .content {
+        width: 520px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 50px;
+
+        h2 {
+            color: $heading-color;
+            font: 400 48px 'Dela Gothic One';
+        }
+
+        p {
+            font: 600 18px 'Montserrat';
+            color: $text-color;
+        }
+
+        .btn{
+            border-radius: 100px;
+            color: $text-button;
+            background-color: $background-button;
+            padding: 14px 22px;
+            width: 135px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .img {
+        background-image: url(./assets/image\ 2.png);
+        width: 580px;
+        height: 474px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

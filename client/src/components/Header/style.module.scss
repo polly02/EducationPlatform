@@ -1,6 +1,12 @@
+$button-color: #2B788B;
+$text-button: #ffff;
+$main-text-color: #000000;
+$shadow: #e0e0e0;
+$background: #f6f5f4;
+
 .wrapper {
-    background: var(--primaty-grey-light, #f6f5f4);
-    box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+    background: var(--primaty-grey-light, $background);
+    box-shadow: 0px -1px 0px 0px $shadow inset;
     padding: 24px 0;
 
     .content {
@@ -17,17 +23,17 @@
             align-items: center;
 
             .login {
-                color: #000000;
+                color: $main-text-color;
                 font: 700 16px 'Montserrat';
             }
 
             .sign {
                 border-radius: 14px;
-                background: #2B788B;
+                background: $button-color;
                 width: 100px;
                 padding: 13px 0;
                 text-align: center;
-                color: #ffff;
+                color: $text-button;
             }
         }
     }

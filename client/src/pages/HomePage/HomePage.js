@@ -5,6 +5,7 @@ function HomePage() {
     return (
         <>
             <Header></Header>
+
             <div className={style.preview}>
                 <div className={style.content}>
                     <p className={style.textPlatform}>E-COURSE PLATFORM</p>
@@ -15,6 +16,31 @@ function HomePage() {
                         <p className={style.studentsCount}><span className={style.lightning}></span> 600 <span className={style.plus}>+</span></p>
                         <p className={style.studentsText}>Students</p>
                     </div>
+                </div>
+                <div className={style.img}></div>
+            </div>
+
+            <div className={style.playing}>
+                <div className={style.img}></div>
+                <div className={style.content}>
+                    <h2>Learn a language in a playful way</h2>
+                    <p>Make learning programming languages more fun with mini-games</p>
+                    <div className={style.modals}>
+                        <div className={style.sprint}>
+                            <div className={style.shoes}></div>
+                            Sprint →</div>
+                        <div className={style.task}>
+                            <div className={style.megaphone}></div>
+                            Tasks →</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={style.textbook}> 
+                <div className={style.content}>
+                    <h2>Increase your knowledge</h2>
+                    <p>Traditional and new effective approaches to learning languages</p>
+                    <div className={style.btn}>Textbook →</div>
                 </div>
                 <div className={style.img}></div>
             </div>
