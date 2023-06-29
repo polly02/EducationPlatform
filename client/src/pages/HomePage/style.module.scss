@@ -193,7 +193,7 @@ $additional-text: #585858;
             color: $text-color;
         }
 
-        .btn{
+        .btn {
             border-radius: 100px;
             color: $text-button;
             background-color: $background-button;
@@ -210,5 +210,50 @@ $additional-text: #585858;
         height: 474px;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+.statistics {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 120px auto 0;
+
+    .img {
+        background-image: url(./assets/image\ 1.png);
+        width: 680px;
+        height: 410px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .content {
+        width: 520px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 30px;
+
+        h2 {
+            color: $heading-color;
+            font: 400 48px 'Dela Gothic One';
+        }
+
+        p {
+            font: 600 18px 'Montserrat';
+            color: $text-color;
+        }
+
+        .btn {
+            border-radius: 100px;
+            color: $text-button;
+            background-color: $background-button;
+            padding: 14px 22px;
+            width: 135px;
+            text-align: center;
+            cursor: pointer;
+        }
     }
 }

@@ -1,0 +1,33 @@
+.content {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto;
+}
+.content .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.content .navigation a {
+  font: 600 14px "Montserrat";
+  color: #757575;
+}
+.content .navigation a:not(:last-child) {
+  margin-right: 30px;
+}
+.content .navigation .menu {
+  margin-right: 670px;
+}
+.content .line {
+  border-bottom: 1px solid #E0E0E0;
+}

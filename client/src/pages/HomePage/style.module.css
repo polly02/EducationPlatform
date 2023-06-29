@@ -226,3 +226,53 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.statistics {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 120px auto 0;
+}
+.statistics .img {
+  background-image: url(./assets/image\ 1.png);
+  width: 680px;
+  height: 410px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.statistics .content {
+  width: 520px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+.statistics .content h2 {
+  color: #000000;
+  font: 400 48px "Dela Gothic One";
+}
+.statistics .content p {
+  font: 600 18px "Montserrat";
+  color: #757575;
+}
+.statistics .content .btn {
+  border-radius: 100px;
+  color: #2B788B;
+  background-color: #C3DCE3;
+  padding: 14px 22px;
+  width: 135px;
+  text-align: center;
+  cursor: pointer;
+}

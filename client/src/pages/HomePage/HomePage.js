@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 import style from "./style.module.css"
 
@@ -36,7 +37,7 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className={style.textbook}> 
+            <div className={style.textbook}>
                 <div className={style.content}>
                     <h2>Increase your knowledge</h2>
                     <p>Traditional and new effective approaches to learning languages</p>
@@ -44,6 +45,17 @@ function HomePage() {
                 </div>
                 <div className={style.img}></div>
             </div>
+
+            <div className={style.statistics}>
+                <div className={style.img}></div>
+                <div className={style.content}>
+                    <h2>Watch your progress every day</h2>
+                    <p>Save statistics on your achievements and mistakes</p>
+                    <div className={style.btn}>Statistics →</div>
+                </div>
+            </div>
+
+            <Footer></Footer>
         </>
     )
 }

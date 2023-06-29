@@ -1,0 +1,35 @@
+.content {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            font: 600 14px 'Montserrat';
+            color: #757575;
+
+        }
+
+        a:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        .menu {
+            margin-right: 670px;
+        }
+    }
+
+    .line {
+        border-bottom: 1px solid #E0E0E0;
+        // border: 1px;
+        // color: #E0E0E0;
+        // width: 1200px;
+        // height: 2px;
+    }
+
+}
