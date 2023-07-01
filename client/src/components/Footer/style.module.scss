@@ -1,35 +1,81 @@
+$text-color: #757575;
+$line-color: #E0E0E0;
+
 .content {
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 40px auto;
+    flex-direction: column;
 
     .navigation {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
 
         a {
             font: 600 14px 'Montserrat';
-            color: #757575;
+            color: $text-color;
 
         }
 
         a:not(:last-child) {
             margin-right: 30px;
         }
-
-        .menu {
-            margin-right: 670px;
-        }
     }
 
     .line {
-        border-bottom: 1px solid #E0E0E0;
-        // border: 1px;
-        // color: #E0E0E0;
-        // width: 1200px;
-        // height: 2px;
+        border-bottom: 1px solid $line-color;
+        margin-top: 20px;
     }
 
+    .info {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+
+            .face {
+                background-image: url(./assets/face.svg);
+                width: 30px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .gt {
+                background-image: url(./assets/gt.svg);
+                width: 30px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .youtube {
+                background-image: url(./assets/ut.svg);
+                width: 30px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .face,
+            .gt {
+                margin-right: 30px;
+            }
+        }
+
+        p {
+            font: 600 12px 'Montserrat';
+            color: $text-color;
+
+        }
+
+        span {
+            font: 600 12px 'Montserrat';
+            text-decoration: underline;
+        }
+    }
 }

@@ -18,7 +18,14 @@ function Footer() {
                 </div>
             </div>
             <div className={style.line}></div>
-            <div></div>
+            <div className={style.info}>
+                <div className={style.logo}>
+                    <div className={style.face}></div>
+                    <div className={style.gt}></div>
+                    <div className={style.youtube}></div>
+                </div>
+                <p>©2021 Hschool. Project for <span>Hschool</span>.</p>
+            </div>
         </div>
     )
 }
